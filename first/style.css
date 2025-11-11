@@ -1,0 +1,12 @@
+.id.header{
+    background-color: red;
+}
+.id.main{
+    background-color: yellow;
+}
+#content{
+    color: blue;
+}
+#second-content{
+    color: green;
+}
