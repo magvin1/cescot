@@ -1,12 +1,12 @@
-.id.header{
+#header{
     background-color: red;
 }
-.id.main{
+#main{
     background-color: yellow;
 }
-#content{
+.content{
     color: blue;
 }
-#second-content{
+.second-content{
     color: green;
 }
