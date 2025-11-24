@@ -10,7 +10,7 @@
     <h1>pagina di prova</h1>
     <?php
         for($i=0;$i<15;$i++){
-            echo "<div> Questo è il div numero ". $i+1;
+            echo "<div class=numerati> Questo è il div numero ". $i+1;
             echo " </div>";
         }
     ?>
