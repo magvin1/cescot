@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <?php
+        $random = rand(1,3);
+        echo "<link rel='stylesheet' href='style_". $random .".css'>";
+    ?>
     <title>Document</title>
 </head>
 <body>
     <h1>css casuali</h1>
     <?php
-        for($i=0;$i<15;$i++){
+        for($i=0;$i<10;$i++){
 
             if($i % 2 == 0){
                 echo "<div class=pari> Questo è il div numero ". $i+1 . "</div>";
