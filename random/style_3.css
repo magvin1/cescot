@@ -1,0 +1,17 @@
+h1{
+    background-color: green;
+    color: black;
+}
+div.pari{
+    background-color: blue;
+    color: yellow;
+}
+
+div.dispari{
+    background-color: yellow;
+    color: blue;
+}
+div{
+    background-color: green;
+    color: black;
+}
