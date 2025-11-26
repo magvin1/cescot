@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Contenuti a caso</h1>
+    <?php
+    $random = rand(10,30);
+        for($i=0;$i<$random;$i++){
+            if($i % 2 == 0){
+                echo "<div class=pari> io sono pari</div>";
+            }else{
+                echo "<div class=dispari> io sono dispari</div>";
+            }         
+        }
+    ?>
 </body>
 </html>
