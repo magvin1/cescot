@@ -18,7 +18,7 @@ aggiungere un div finale con scritto "Fine pagina"
     <h1 class="iniziale">Contenuti a caso</h1>
     <?php
     $random = rand(10,30);//genera un numero casuale tra 10 e 30
-        for($i=0;$i<$random;$i++){
+        for($i=1;$i<$random;$i++){
             if($i % 2 == 0){
                 echo "<div class=pari> io sono pari ($i)</div>";
             }else{
