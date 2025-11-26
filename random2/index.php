@@ -12,9 +12,9 @@
     $random = rand(10,30);
         for($i=0;$i<$random;$i++){
             if($i % 2 == 0){
-                echo "<div class=pari> io sono pari</div>";
+                echo "<div class=pari> io sono pari ($i)</div>";
             }else{
-                echo "<div class=dispari> io sono dispari</div>";
+                echo "<div class=dispari> io sono dispari ($i)</div>";
             }         
         }
     ?>
