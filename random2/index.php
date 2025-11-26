@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+/*
+Creare una pagina PHP che genera un numero casuale di div tra 10 e 30.
+e connessa a style.css.
+Colorare i div con lo style.css a seconda che il loro indice sia pari o dispari.
+aggiungere un div finale con scritto "Fine pagina"
+*/
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,14 +17,14 @@
 <body>
     <h1 class="iniziale">Contenuti a caso</h1>
     <?php
-    $random = rand(10,30);
+    $random = rand(10,30);//genera un numero casuale tra 10 e 30
         for($i=0;$i<$random;$i++){
             if($i % 2 == 0){
                 echo "<div class=pari> io sono pari ($i)</div>";
             }else{
                 echo "<div class=dispari> io sono dispari ($i)</div>";
-            }         
-        }
+            }  
+        }//genera div in base al numero casuale e li indica come pari o dispari
     ?>
     <div class="finale">Fine pagina</div>
 </body>
