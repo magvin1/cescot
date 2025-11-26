@@ -25,7 +25,21 @@ aggiungere un div finale con scritto "Fine pagina"
                 echo "<div class=dispari> io sono dispari ($i)</div>";
             }  
         }//genera div in base al numero casuale e li indica come pari o dispari
+        somma(3,7);//chiamata alla funzione somma
     ?>
     <div class="finale">Fine pagina</div>
 </body>
 </html>
+<?php
+/**
+ * funzione somma
+ * @param int $a
+ * @param int $b
+ * @return int
+ */
+    function somma($a,$b){
+        return $a + $b;
+    }
+?>
+
+/* Si poteva usare printdiv oppure una funzione che lo chiamava*/
