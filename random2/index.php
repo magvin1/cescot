@@ -8,8 +8,6 @@
 </head>
 <body>
     <h1 class="iniziale">Contenuti a caso</h1>
-
-    
     <?php
     $random = rand(10,30);
         for($i=0;$i<$random;$i++){
@@ -20,6 +18,6 @@
             }         
         }
     ?>
-<div class="finale">Fine pagina</div>
+    <div class="finale">Fine pagina</div>
 </body>
 </html>
