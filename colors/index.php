@@ -18,6 +18,7 @@
 </html>
 
 <?php
+    //inserisco div con classi per randomizzare i colori
     function genera_div($numero_div, $testodiv){
         for($i=0; $i<$numero_div; $i++){
             $colore=genera_colore_casuale();
