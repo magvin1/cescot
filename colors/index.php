@@ -9,6 +9,7 @@
 <body>
     <h1>colori</h1>
     <?php
+    //dichiaro variabile random
         $random=rand(5,30);
         genera_div($random, "div generato");
     ?>
