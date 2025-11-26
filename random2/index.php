@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 class="iniziale">Contenuti a caso</h1>
+
+    <div class="finale">Fine pagina</div>
 </body>
 </html>
