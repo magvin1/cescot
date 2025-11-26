@@ -21,21 +21,21 @@
         for($i=0; $i<$numero_div; $i++){
             $colore=genera_colore_casuale();
 
-            
-            if(colore=="red"){
-                echo "<div class='divRosso'>". $testodiv. "</div>";
-            }else{
-                if(colore=="green"){
+            switch($colore){
+                case "red":
+                    echo "<div class='divRosso'>". $testodiv. "</div>";
+                    break;
+                case "green":
                     echo "<div class='divVerde'>". $testodiv. "</div>";
-                }else{
-                    if(colore=="blue"){
-                        echo "<div class='divBlu'>". $testodiv. "</div>";
-                    }else{
-                        echo "<div class='divGiallo'>". $testodiv. "</div>";
-                    }
-                }
-
+                    break;
+                case "blue":
+                    echo "<div class='divBlu'>". $testodiv. "</div>";
+                    break;
+                case "yellow":
+                    echo "<div class='divGiallo'>". $testodiv. "</div>";
+                    break;
             }
+
         }
     }
 
