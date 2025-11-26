@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>colori</h1>
+    <div id="divFinale">div finale</div>
 </body>
 </html>
