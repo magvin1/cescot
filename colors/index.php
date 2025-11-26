@@ -19,7 +19,37 @@
 <?php
     function genera_div($numero_div, $testodiv){
         for($i=0; $i<$numero_div; $i++){
-            echo "<div class='div_generato'>". $testodiv. "</div>";
+            $colore=genera_colore_casuale();
+
+            
+            if(colore=="red"){
+                echo "<div class='divRosso'>". $testodiv. "</div>";
+            }else{
+                if(colore=="green"){
+                    echo "<div class='divVerde'>". $testodiv. "</div>";
+                }else{
+                    if(colore=="blue"){
+                        echo "<div class='divBlu'>". $testodiv. "</div>";
+                    }else{
+                        echo "<div class='divGiallo'>". $testodiv. "</div>";
+                    }
+                }
+
+            }
         }
     }
+
+    function genera_colore_casuale(){
+    $random=rand(1,4);
+        switch($random){
+            case 1:
+                return "red";
+            case 2:
+                return "green";
+            case 3:
+                return "blue";
+            case 4:
+                return "yellow";
+        }
+}
 ?>
