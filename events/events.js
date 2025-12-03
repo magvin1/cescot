@@ -1,5 +1,7 @@
 /*mo ci scriviamo qualcosa*/
 function sfondoDivRosso(){
-let mioDiv = document.getElementsByClass('colora_div').addEventListener('click', cambiaColore);
-mioDiv.style.backgroundColor = 'red';
+let mioDiv = document.getElementsByClassName('cambia_colore');
+for(let i=0; i< mioDiv.length; i++){
+mioDiv[i].style.backgroundColor = 'red';
+}
 }
