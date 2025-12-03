@@ -1,1 +1,8 @@
-/* anceh qui mo ci facciamo qualcosa*/
+h1{
+    color: red;
+}
+div{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
