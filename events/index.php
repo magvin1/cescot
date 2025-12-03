@@ -11,7 +11,7 @@
         <button id="btn_colora" onclick="sfondoDivRosso()">Colora</button>
         <?php
             for($i=0;$i<20;$i++){
-                echo "<div> Div numero ". $i+1 . "</div>";
+                echo "<div class='cambia_colore'> Div numero ". $i+1 . "</div>";
             }
         ?>
     <script src="events.js"></script>
