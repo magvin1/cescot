@@ -4,3 +4,4 @@ function sfondoDivRosso(){
     mioDiv[i].style.backgroundColor = 'red';
     }
 }
+//si
