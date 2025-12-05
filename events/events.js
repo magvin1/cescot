@@ -1,10 +1,10 @@
+
 const mioDivs = document.getElementsByClassName('cambia_colore');
 
-
-//    Questa è la collezione di tutti i bottoni colorati.
 const bottoniColore = document.querySelectorAll('[data-colore]');
+
 function cambiaColoreDiv(event) {
-    
+
     const bottoneCliccato = event.currentTarget;
     
     

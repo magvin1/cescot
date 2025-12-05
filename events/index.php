@@ -11,6 +11,8 @@
         <button id="red" onclick="sfondoDiv(this)" data-colore="red">Rosso</button>
         <button id="yellow" onclick="sfondoDiv(this)" data-colore="yellow">Giallo</button>
         <button id="blue" onclick="sfondoDiv(this)" data-colore="blue">Blu</button> <?php
+        
+        <?php
             for($i=0;$i<20;$i++){
                 echo "<div class='cambia_colore'> Div numero ". $i+1 . "</div>";
             }
