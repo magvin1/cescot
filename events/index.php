@@ -8,7 +8,9 @@
     </head>
     <body>
         <h1> Eventi javascript</h1>
-        <button id="btn_colora" onclick="sfondoDivRosso()">Colora</button>
+        <button id="red" data-colore="red">Rosso</button>
+        <button id="yellow" data-colore="yellow">Giallo</button>
+        <button id="blue" data-colore="blue">Blu</button>
         <?php
             for($i=0;$i<20;$i++){
                 echo "<div class='cambia_colore'> Div numero ". $i+1 . "</div>";
@@ -17,3 +19,4 @@
     <script src="events.js"></script>
     </body>
 </html>
+
