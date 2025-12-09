@@ -8,9 +8,10 @@
     </head>
     <body>
         <h1> Eventi javascript</h1>
-        <button id="red" onclick="sfondoDiv(this)" data-colore="red">Rosso</button>
-        <button id="yellow" onclick="sfondoDiv(this)" data-colore="yellow">Giallo</button>
-        <button id="blue" onclick="sfondoDiv(this)" data-colore="blue">Blu</button> <?php
+        <button id="red" onclick="sfondoDivRosso()">Rosso</button>
+        <button id="yellow" onclick="sfondoDivGiallo()">Giallo</button>
+        <button id="blue" onclick="sfondoDivBlu()">Blu</button>
+
         
         <?php
             for($i=0;$i<20;$i++){

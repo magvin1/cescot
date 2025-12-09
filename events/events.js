@@ -1,43 +1,21 @@
-
-const mioDivs = document.getElementsByClassName('cambia_colore');
-
-
-// Questa è la collezzione di tutti i bottoni colorati.
-const bottoniColore = document.querySelectorAll('[data-colore]');
-
-function cambiaColoreDiv(event) {
-
-    const bottoneCliccato = event.currentTarget;
+let divs = document.getElementsByClassName('cambia_colore');
+function sfondoDivRosso(){
     
-    
-    const coloreSelezionato = bottoneCliccato.dataset.colore;
-    
-    
-    for (let i = 0; i < mioDivs.length; i++) {
-        mioDivs[i].style.backgroundColor = coloreSelezionato;
-        if (coloreSelezionato === 'blue') {
-            mioDivs[i].style.color = 'white';
-        } else {
-            mioDivs[i].style.color = 'black';
-        }
+    for(let i = 0; i < divs.length; i++){
+        divs[i].style.backgroundColor = 'red';
     }
 }
 
-bottoniColore.forEach(bottone => {
-    bottone.addEventListener('click', cambiaColoreDiv);
-});
-
-
-//si
-/*
-function sfondoDivRosso(){
-    let mioBtn=document.getElementById('btn_colora');
-
-    mioBtn.addEventListener("click",function(){
-        let divs =document.getElementsByClassName('cambia_colore');
-        for(let i=0; i< mioDiv.length; i++){
-        divs[i].style.backgroundColor = 'red';
-        }
-    })
+function sfondoDivGiallo(){
+   
+    for(let i = 0; i < divs.length; i++){
+        divs[i].style.backgroundColor = 'yellow';
+    }
 }
-*/
+
+function sfondoDivBlu(){
+    for(let i = 0; i < divs.length; i++){
+        divs[i].style.backgroundColor = 'blue';
+    }
+}
+
