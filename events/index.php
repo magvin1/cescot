@@ -11,6 +11,7 @@
         <button id="red" onclick="sfondoDivRosso()">Rosso</button>
         <button id="yellow" onclick="sfondoDivGiallo()">Giallo</button>
         <button id="blue" onclick="sfondoDivBlu()">Blu</button>
+        <button id="alterna" onclick="alternaSfondoDiv()">Alterna</button>
 
         
         <?php
