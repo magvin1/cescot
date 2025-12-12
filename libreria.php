@@ -1,0 +1,4 @@
+libreria di funzioni
+<?php
+
+?>
