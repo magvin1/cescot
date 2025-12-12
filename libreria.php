@@ -1,4 +1,0 @@
-libreria di funzioni
-<?php
-
-?>

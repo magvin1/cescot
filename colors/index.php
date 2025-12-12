@@ -1,5 +1,5 @@
 <?php
-    include '../cescot/libreria.php';
+    include ('../lib/libreria.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
