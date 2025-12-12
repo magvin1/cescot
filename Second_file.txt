@@ -3,3 +3,44 @@ Incredibly complicated text
 2) Random/index.php funziona che crea i div e li indicizza come div pari o div dispari
     anche la funzione per il Random per lo stesso file
 3) Random2/index.php genera un numero random tra 10 e 30 di divs e li indicizza come pari o dispari
+
+1)for($i=0;$i<15;$i++){
+            echo "<div class=numerati> Questo è il div numero ". $i+1 . "</div>";
+        }
+        potremmo creare una funzione crea_div($n_div)
+        {
+            for($i=0;$i<$n_div;$i++){
+            echo "<div class=numerati> Questo è il div numero ". $i+1 . "</div>";
+        }
+        }
+
+2) for($i=0;$i<10;$i++){
+
+            if($i % 2 == 0){
+                echo "<div class=pari> Questo è il div numero ". $i+1 . "</div>";
+            
+            }else{
+                echo "<div class=dispari> Questo è il div numero ". $i+1 . "</div>";
+                }
+        }
+
+        potremmo creare una funzione crea_div_pari_dispari($n_div){
+            for($i=0;$i<n_div;$i++){
+                if($i+1 % 2 == 0){
+                    echo "<div class=pari> Questo è il div numero ". $i+1 . "</div>";
+                
+                }else{
+                    echo "<div class=dispari> Questo è il div numero ". $i+1 . "</div>";
+                    }
+            }
+        }
+3)$random = rand(10,30);//genera un numero casuale tra 10 e 30
+        for($i=1;$i<$random+1;$i++){
+            if($i % 2 == 0){
+                echo "<div class=pari> io sono pari ($i)</div>";
+            }else{
+                echo "<div class=dispari> io sono dispari ($i)</div>";
+            }  
+        }
+
+        potremmo utilizzare la funzione precedente per il numero dei div 
