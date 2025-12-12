@@ -8,9 +8,9 @@
     </head>
     <body>
         <h1> Eventi javascript</h1>
-        <button id="red" onclick="sfondoDivRosso()">Rosso</button>
-        <button id="yellow" onclick="sfondoDivGiallo()">Giallo</button>
-        <button id="blue" onclick="sfondoDivBlu()">Blu</button>
+        <button id="red" onclick="cambiaColoreDiv('red')">Rosso</button>
+        <button id="yellow" onclick="cambiaColoreDiv('yellow')">Giallo</button>
+        <button id="blue" onclick="cambiaColoreDiv('blue')">Blu</button>
         <button id="alterna" onclick="alternaSfondoDiv()">Alterna</button>
 
         
