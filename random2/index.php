@@ -17,15 +17,19 @@ aggiungere un div finale con scritto "Fine pagina"
 <body>
     <h1 class="iniziale">Contenuti a caso</h1>
     <?php
-    $random = rand(10,30);//genera un numero casuale tra 10 e 30
+    //Primma di refactoring 12/12/2025
+    /*$random = rand(10,30);//genera un numero casuale tra 10 e 30
         for($i=1;$i<$random+1;$i++){
             if($i % 2 == 0){
                 echo "<div class=pari> io sono pari ($i)</div>";
             }else{
                 echo "<div class=dispari> io sono dispari ($i)</div>";
             }  
-        }//genera div in base al numero casuale e li indica come pari o dispari
+        }*/ //genera div in base al numero casuale e li indica come pari o dispari
         /* Si poteva usare printdiv oppure una funzione che lo chiamava*/
+        
+        //Dopo refactoring
+        
     ?>
     <div class="finale">Fine pagina</div>
 </body>
