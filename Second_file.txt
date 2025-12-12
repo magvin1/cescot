@@ -1,1 +1,5 @@
 Incredibly complicated text
+1) php/page.php in php page php creare la funzione di creazione dei div, li crea precisamente 15 divs
+2) Random/index.php funziona che crea i div e li indicizza come div pari o div dispari
+    anche la funzione per il Random per lo stesso file
+3) Random2/index.php genera un numero random tra 10 e 30 di divs e li indicizza come pari o dispari
