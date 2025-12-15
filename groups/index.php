@@ -11,14 +11,14 @@
     </head>
     <body>
         <div>
-        <button id="firstRed" onclick="cambiaColoreDiv('red')">Primo Rosso</button>
-        <button id="secondRed" onclick="cambiaColoreDiv('red')">Secondo Rosso</button>
-        <button id="allRed" onclick="cambiaColoreDiv('red')">Tutti Rossi</button>
-        <button id="firstBlue" onclick="cambiaColoreDiv('blue')">Primo Blu</button>
-        <button id="secondBlue" onclick="cambiaColoreDiv('blue')">Secondo Blu</button>
-        <button id="allBlue" onclick="alternaSfondoDiv('blue')">Tutti Blu</button>
-        <h2><?php crea_div(rand(5,10), primo_gruppo)?></h2>
-        <h2><?php crea_div(rand(10,15), secondo_gruppo)?></h2>
+        <button id="first_red" onclick="cambiaColoreDiv('red')">Primo Rosso</button>
+        <button id="second_red" onclick="cambiaColoreDiv('red')">Secondo Rosso</button>
+        <button id="every_red" onclick="cambiaColoreDiv('red')">Tutti Rossi</button>
+        <button id="first_blue" onclick="cambiaColoreDiv('blue')">Primo Blu</button>
+        <button id="second_blue" onclick="cambiaColoreDiv('blue')">Secondo Blu</button>
+        <button id="every_blue" onclick="alternaSfondoDiv('blue')">Tutti Blu</button>
+        <h2 class='first_group'><?php crea_div(rand(5,10), primo_gruppo)?></h2>
+        <h2 class='second_group'><?php crea_div(rand(10,15), secondo_gruppo)?></h2>
         </div>
     </body>
 </html>
