@@ -16,10 +16,11 @@
         <button id="every_red" onclick="cambiaColoreDiv('every_red')">Tutti Rossi</button>
         <button id="first_blue" onclick="cambiaColoreDiv('first_blue')">Primo Blu</button>
         <button id="second_blue" onclick="cambiaColoreDiv('second_blue')">Secondo Blu</button>
-        <button id="every_blue" onclick="alternaSfondoDiv('every_blue')">Tutti Blu</button>
+        <button id="every_blue" onclick="cambiaColoreDiv('every_blue')">Tutti Blu</button>
 
         <h2 class='first_group'><?php crea_div(rand(5,10), 'primo_gruppo')?></h2>
         <h2 class='second_group'><?php crea_div(rand(10,15), 'secondo_gruppo')?></h2>
         </div>
     </body>
+    <script src="groups.js"></script>
 </html>
