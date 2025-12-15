@@ -1,1 +1,10 @@
 /* eventuale css */
+
+h2.primo_gruppo div{
+    width: 150px;
+    height: 150px;
+}
+h2.secondo_gruppo div{
+    width: 100px;
+    height: 100px;
+}
