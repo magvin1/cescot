@@ -17,8 +17,8 @@
         <button id="firstBlue" onclick="cambiaColoreDiv('blue')">Primo Blu</button>
         <button id="secondBlue" onclick="cambiaColoreDiv('blue')">Secondo Blu</button>
         <button id="allBlue" onclick="alternaSfondoDiv('blue')">Tutti Blu</button>
-        <h2><?php crea_div(rand(5,10), primoGruppo)?></h2>
-        <h2><?php crea_div(rand(10,15), secondoGruppo)?></h2>
+        <h2><?php crea_div(rand(5,10), primo_gruppo)?></h2>
+        <h2><?php crea_div(rand(10,15), secondo_gruppo)?></h2>
         </div>
     </body>
 </html>
