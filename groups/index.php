@@ -10,6 +10,15 @@
         <title>Document</title>
     </head>
     <body>
-        
+        <div>
+        <button id="firstRed" onclick="cambiaColoreDiv('red')">Primo Rosso</button>
+        <button id="secondRed" onclick="cambiaColoreDiv('red')">Secondo Rosso</button>
+        <button id="allRed" onclick="cambiaColoreDiv('red')">Tutti Rossi</button>
+        <button id="firstBlue" onclick="cambiaColoreDiv('blue')">Primo Blu</button>
+        <button id="secondBlue" onclick="cambiaColoreDiv('blue')">Secondo Blu</button>
+        <button id="allBlue" onclick="alternaSfondoDiv('blue')">Tutti Blu</button>
+        <h2><?php crea_div(rand(5,10), primoGruppo)?></h2>
+        <h2><?php crea_div(rand(10,15), secondoGruppo)?></h2>
+        </div>
     </body>
 </html>
