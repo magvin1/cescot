@@ -1,3 +1,6 @@
+<?php
+    include ('../lib/libreria.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +16,7 @@
         /*for($i=0;$i<15;$i++){
             echo "<div class=numerati> Questo è il div numero ". $i+1 . "</div>";
         }*/
+            crea_div(15);
     ?>
     <div>questa è la fine della pagina</div>
 </body>

@@ -1,3 +1,6 @@
+<?php
+    include ('../lib/libreria.php');
+?>
 <!DOCTYPE html>
 <?php
 /*
@@ -29,7 +32,7 @@ aggiungere un div finale con scritto "Fine pagina"
         /* Si poteva usare printdiv oppure una funzione che lo chiamava*/
         
         //Dopo refactoring
-        
+
     ?>
     <div class="finale">Fine pagina</div>
 </body>

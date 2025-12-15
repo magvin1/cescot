@@ -38,29 +38,29 @@
     }
 
     
-    function cambiaColoreDiv(coloreSfondo){
-    let divs = document.getElementsByClassName('cambia_colore');
-    switch(coloreSfondo){
-    case 'red':
-    for(let i = 0; i < divs.length; i++){
-            divs[i].style.backgroundColor = 'red';
+    /*function cambiaColoreDiv(coloreSfondo){
+        let divs = document.getElementsByClassName('cambia_colore');
+        switch(coloreSfondo){
+        case 'red':
+        for(let i = 0; i < divs.length; i++){
+                divs[i].style.backgroundColor = 'red';
+            }
+        break;
+        case 'yellow':
+        for(let i = 0; i < divs.length; i++){
+                divs[i].style.backgroundColor = 'yellow';
+            }
+        break;
+        case 'blue':
+        for(let i = 0; i < divs.length; i++){
+                divs[i].style.backgroundColor = 'blue';
+            }
+        break;
         }
-    break;
-    case 'yellow':
-    for(let i = 0; i < divs.length; i++){
-            divs[i].style.backgroundColor = 'yellow';
-        }
-    break;
-    case 'blue':
-    for(let i = 0; i < divs.length; i++){
-            divs[i].style.backgroundColor = 'blue';
-        }
-    break;
-    }
 
-    }
+    }*/
 
-    function alternaSfondoDiv(){
+    /*function alternaSfondoDiv(){
         let divs = document.getElementsByClassName('cambia_colore');
         for(let i = 0; i < divs.length; i+= 3){
             divs[i].style.backgroundColor = 'red';
@@ -71,5 +71,22 @@
         for(let i = 2; i < divs.length; i+= 3){
             divs[i].style.backgroundColor = 'blue';
         }
-    }
+    }*/
+    
+    function crea_div($n_div){
+            for($i=0;$i<$n_div;$i++){
+            echo "<div class=numerati> Questo è il div numero ". $i+1 . "</div>";
+            }
+        }
+
+    function crea_div_pari_dispari($n_div){
+            for($i=0;$i<$gn_div;$i++){
+                if($i+1 % 2 == 0){
+                    echo "<div class=pari> Questo è il div numero ". $i+1 . "</div>";
+                
+                }else{
+                    echo "<div class=dispari> Questo è il div numero ". $i+1 . "</div>";
+                    }
+            }
+        }
 ?>

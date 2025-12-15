@@ -7,11 +7,11 @@ Incredibly complicated text
 1)for($i=0;$i<15;$i++){
             echo "<div class=numerati> Questo è il div numero ". $i+1 . "</div>";
         }
-        potremmo creare una funzione crea_div($n_div)
-        {
+        potremmo creare una funzione 
+        function crea_div($n_div){
             for($i=0;$i<$n_div;$i++){
             echo "<div class=numerati> Questo è il div numero ". $i+1 . "</div>";
-        }
+            }
         }
 
 2) for($i=0;$i<10;$i++){
@@ -24,8 +24,8 @@ Incredibly complicated text
                 }
         }
 
-        potremmo creare una funzione crea_div_pari_dispari($n_div){
-            for($i=0;$i<n_div;$i++){
+        potremmo creare una funzione function crea_div_pari_dispari($n_div){
+            for($i=0;$i<$n_div;$i++){
                 if($i+1 % 2 == 0){
                     echo "<div class=pari> Questo è il div numero ". $i+1 . "</div>";
                 

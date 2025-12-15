@@ -1,3 +1,6 @@
+<?php
+    include ('../lib/libreria.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +25,8 @@
                 }
         }*///prima del refactoring precedentemente detto
         //Dopo refactoring
-        
+        crea_div_pari_dispari(10);
+
     ?>
     <div> questa è la fine della pagina</div>
 </body>
