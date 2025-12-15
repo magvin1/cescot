@@ -1,7 +1,7 @@
 //eventuale js
 function cambiaColoreDiv(coloreSfondo){
     // seleziona tutti gli elementi con la classe 'cambia_colore'
-    let divs = document.getElementsByClassName('first_group');
+    let divs = document.getElementsByClassName('primo_gruppo');
     // scegli il colore in base al parametro passato
     switch(coloreSfondo){
         case 'first_red':
@@ -32,6 +32,11 @@ function cambiaColoreDiv(coloreSfondo){
                 divs[i].style.backgroundColor = 'blue';
             }
             break;
+        default:
+            for(let i = 0; i < divs.length; i++){
+                // imposta lo sfondo di ogni div su blu
+                divs[i].style.backgroundColor = 'green';
+            }
     }
 
 }
