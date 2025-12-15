@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
         //$random = rand(1,3); come era prima del refactoring del 12/12/2025
-        echo "<link rel='stylesheet' href='style_". rand(1,3) .".css/'>";
+        echo "<link rel='stylesheet' href='style_". rand(1,3) .".css'>";
     ?>
     <title>Document</title>
 </head>

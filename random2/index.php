@@ -32,7 +32,7 @@ aggiungere un div finale con scritto "Fine pagina"
         /* Si poteva usare printdiv oppure una funzione che lo chiamava*/
         
         //Dopo refactoring
-
+        crea_div_pari_dispari(rand(10,30))
     ?>
     <div class="finale">Fine pagina</div>
 </body>

@@ -80,7 +80,7 @@
         }
 
     function crea_div_pari_dispari($n_div){
-            for($i=0;$i<$gn_div;$i++){
+            for($i=0;$i<$n_div;$i++){
                 if($i+1 % 2 == 0){
                     echo "<div class=pari> Questo è il div numero ". $i+1 . "</div>";
                 
