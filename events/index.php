@@ -1,3 +1,6 @@
+<?php
+    include ('../lib/libreria.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,9 +20,10 @@
 
         
         <?php
-            for($i=0;$i<20;$i++){
+            crea_div(20,'cambia_colore');
+            /*for($i=0;$i<20;$i++){
                 echo "<div class='cambia_colore'> Div numero ". $i+1 . "</div>";
-            }
+            }*/
         ?>
     <script src="events.js"></script>
     </body>
