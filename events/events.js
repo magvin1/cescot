@@ -42,6 +42,18 @@ function cambiaColoreDiv(coloreSfondo){
                 divs[i].style.backgroundColor = 'blue';
             }
             break;
+        case 'green':
+            for(let i = 0; i < divs.length; i++){
+                // imposta lo sfondo di ogni div su blu
+                divs[i].style.backgroundColor = 'green';
+            }
+            break;
+        case 'orange':
+            for(let i = 0; i < divs.length; i++){
+                // imposta lo sfondo di ogni div su blu
+                divs[i].style.backgroundColor = 'orange';
+            }
+            break;
     }
 
 }
