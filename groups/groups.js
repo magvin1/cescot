@@ -1,8 +1,8 @@
 //eventuale js
 function cambiaColoreDiv(coloreSfondo){
-    // seleziona tutti gli elementi con la classe 'cambia_colore'
+    // creo la variabile divs, inizializzandola solo all'interno dello switch
     let divs;
-    // scegli il colore in base al parametro passato
+    // scegli il colore e il gruppo da colorare in base al parametro passato
     switch(coloreSfondo){
         case 'first_red': // imposta lo sfondo del primo gruppo div su rosso
             divs = document.getElementsByClassName('primo_gruppo');
