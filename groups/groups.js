@@ -1,7 +1,7 @@
 //eventuale js
 function cambiaColoreDiv(coloreSfondo){
     // seleziona tutti gli elementi con la classe 'cambia_colore'
-    let divs = document.getElementsByClassName('cambia_colore');
+    let divs = document.getElementsByClassName('first_group');
     // scegli il colore in base al parametro passato
     switch(coloreSfondo){
         case 'first_red':
