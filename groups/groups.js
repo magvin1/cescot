@@ -54,7 +54,7 @@ function cambiaColoreDiv(coloreSfondo){
             for(let i = 0; i < divs.length; i++)
                 divs[i].style.backgroundColor = 'yellow';
             break;
-            case 'third_blue': // imposta lo sfondo del secondo gruppo div su blu
+            case 'third_yellow': // imposta lo sfondo del secondo gruppo div su blu
             divs = document.getElementsByClassName('terzo_gruppo');
             for(let i = 0; i < divs.length; i++)
                 divs[i].style.backgroundColor = 'yellow';
