@@ -75,7 +75,7 @@
     
     function crea_div($n_div,$class="numerati"){
             for($i=0;$i<$n_div;$i++){
-            echo "<div class=". $class."> Questo è il div numero ". $i+1 . "</div>";
+            echo "<div class=". $class."> div ". $i+1 . "</div>";
             }
         }
 
