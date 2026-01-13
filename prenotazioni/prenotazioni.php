@@ -24,7 +24,7 @@ inner join prenotazioni as p on c.id_cliente = p.cliente";
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo "<div><h2>". $row["arrivo"]. "</h2><p>" . $row["nome"]. " " . $row["cognome"] ." ". $row["citta"]. " " . $row["importo"]. " " . $row["caparra"]." <span class='saldo'>". $row["saldo_da_pagare"]. " " ."</span></p></div>";
+                echo "<div><h2>". $row["arrivo"]. "</h2><p>" . $row["nome"]. " " . $row["cognome"] ." ". $row["citta"]. " " . $row["importo"]. " " . $row["caparra"]." <span class='saldo'>". round($row["saldo_da_pagare"]). " " ."</span></p></div>";
             }
         } else {
             echo "0 results";
