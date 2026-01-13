@@ -100,6 +100,7 @@
             
             if(!$mysqli){
                 die("Connessione fallita: ". mysqli_connect_error());
+                return null;
             }
             return $mysqli;
         }
