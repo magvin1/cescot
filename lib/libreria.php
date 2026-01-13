@@ -90,9 +90,8 @@
             }
         }
 
-        function connetti_db(){
+        function connetti_db($dbname="cescot"){
             $host= "localhost";
-            $dbname="cescot";
             $username="root";
             $password="";
             
