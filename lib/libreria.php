@@ -89,4 +89,18 @@
                     }
             }
         }
+
+        function connetti_db(){
+            $host= "localhost";
+            $dbname="cescot";
+            $username="root";
+            $password="";
+            
+            $mysqli = mysqli_connect($host, $username, $password, $dbname);
+            
+            if(!$mysqli){
+                die("Connessione fallita: ". mysqli_connect_error());
+            }
+            return $mysqli;
+        }
 ?>
