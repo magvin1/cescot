@@ -8,3 +8,6 @@ h2{
 .saldo{
     font-weight: bold;
 }
+div{
+    border: 2px solid black;
+}
