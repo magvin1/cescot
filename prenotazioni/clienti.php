@@ -10,24 +10,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Prenotazioni</h1>
+    <h1>Clienti</h1>
     <?php
     $mysqli= connetti_db("prenotazioni");
 $queryDati= 
-"select c.nome, c.cognome, cit.citta, p.importo,p.arrivo, p.caparra, p.importo- p.caparra as saldo_da_pagare
+"select c.nome, c.cognome, cit.citta, r.regione, r.area_geografica
 from clienti as c
 inner join citta as cit on c.citta = cit.id_citta
-inner join prenotazioni as p on c.id_cliente = p.cliente";
+inner join regioni as r on cit.regione = r.ID_regione";
 
     $result = $mysqli->query($queryDati);
 
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-                echo "<div><h2>". $row["arrivo"]. "</h2><p>" . $row["nome"]. " " 
-                . $row["cognome"] ." ". $row["citta"]. " " . $row["importo"]. " " 
-                . $row["caparra"]." <span class='saldo'>". round($row["saldo_da_pagare"]). " " 
-                ."</span></p></div>";
+                echo "<div><h2>". $row["nome"]. " " . $row["cognome"] ."</h2><p>"  
+                . $row["regione"]. " " . $row["area_geografica"]. " " 
+                . $row["citta"]."</p></div>";
             }
         } else {
             echo "0 results";
