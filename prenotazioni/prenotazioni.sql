@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 15, 2026 at 11:32 AM
+-- Generation Time: Jan 15, 2026 at 11:35 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `prenotazioni`
 --
+CREATE DATABASE IF NOT EXISTS `prenotazioni` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `prenotazioni`;
 
 -- --------------------------------------------------------
 
@@ -27,6 +29,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `citta`
 --
 
+DROP TABLE IF EXISTS `citta`;
 CREATE TABLE `citta` (
   `id_citta` int(11) NOT NULL,
   `citta` varchar(255) DEFAULT NULL,
@@ -397,6 +400,7 @@ INSERT INTO `citta` (`id_citta`, `citta`, `provincia_sigla`, `provincia_nome`, `
 -- Table structure for table `clienti`
 --
 
+DROP TABLE IF EXISTS `clienti`;
 CREATE TABLE `clienti` (
   `ID_cliente` int(11) NOT NULL,
   `nome` varchar(255) DEFAULT NULL,
@@ -1347,6 +1351,7 @@ INSERT INTO `clienti` (`ID_cliente`, `nome`, `cognome`, `dataNascita`, `citta`) 
 -- Table structure for table `prenotazioni`
 --
 
+DROP TABLE IF EXISTS `prenotazioni`;
 CREATE TABLE `prenotazioni` (
   `ID_prenotazione` int(11) NOT NULL,
   `camera` varchar(255) DEFAULT NULL,
@@ -10659,6 +10664,7 @@ INSERT INTO `prenotazioni` (`ID_prenotazione`, `camera`, `arrivo`, `partenza`, `
 -- Table structure for table `regioni`
 --
 
+DROP TABLE IF EXISTS `regioni`;
 CREATE TABLE `regioni` (
   `ID_regione` int(11) NOT NULL,
   `regione` varchar(255) DEFAULT NULL,
