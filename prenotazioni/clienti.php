@@ -14,6 +14,14 @@
     <?php
     $mysqli= connetti_db("prenotazioni");
 $queryDati= 
+/*"select distinct concat(c.nome,' ',c.cognome), cit.citta, r.regione, r.area_geografica
+from clienti as c
+inner join citta as cit on c.citta = cit.id_citta
+inner join regioni as r on cit.regione = r.ID_regione";
+
+Possibile farlo ma devo aggiungere un riconoscitore come per esempio 'as nome_completo' così lo salvo all'interno 
+di tale variabile e posso poi utilizzarlo come variabile all'interno di row, cancellando row nome e row cognome e inserendo unicamente row nome_completo 
+*/
 "select c.nome, c.cognome, cit.citta, r.regione, r.area_geografica
 from clienti as c
 inner join citta as cit on c.citta = cit.id_citta
