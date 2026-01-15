@@ -25,7 +25,7 @@ inner join regioni as r on cit.regione = r.ID_regione";
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<div><h2>". $row["nome"]. " " . $row["cognome"] ."</h2><p>"  
-                . $row["regione"]. " " . $row["area_geografica"]. " " 
+                . $row["regione"]. "</p><p>" . $row["area_geografica"]. "</p><p>" 
                 . $row["citta"]."</p></div>";
             }
         } else {
