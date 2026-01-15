@@ -90,7 +90,7 @@
             }
         }
 
-        function connetti_db($dbname="cescot"){
+        function connetti_db($dbname="prenotazioni"){
             $host= "localhost";
             $username="root";
             $password="";
