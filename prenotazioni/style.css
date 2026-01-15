@@ -4,7 +4,10 @@ h1{
 h2{
     color: white;
     background-color: red;
+    width: 200px;
+    height: 55px;
 }
+
 .saldo{
     font-weight: bold;
 }
