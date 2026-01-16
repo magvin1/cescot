@@ -11,6 +11,13 @@
 </head>
 <body>
     <h1>Regioni</h1>
+
+    <form method="GET" action="">
+        <label for="cerca">Cerca Regione:</label>
+        <input type="text" name="regione" id="cerca" placeholder="Regione">
+        <button type="submit">Filtra</button>
+    </form>
+
     <?php
     $mysqli= connetti_db("prenotazioni");
     $queryDati= 
