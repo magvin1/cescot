@@ -12,7 +12,7 @@
 			<?php
 				require_once '../lib/library.php';
 				//inizializzo la connessione al database
-				$db_connection = connectDatabase('prenotazioni');
+				$db_connection = connetti_db('prenotazioni');
 				//eseguo una query per ottenere tutte le citta
 				$query = 'SELECT * FROM citta';
 				$result = mysqli_query($db_connection, $query);
