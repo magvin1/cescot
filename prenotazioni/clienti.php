@@ -52,7 +52,7 @@
         from clienti as c
         inner join citta as cit on c.citta = cit.id_citta
         inner join regioni as r on cit.regione = r.ID_regione
-        WHERE r.regione='".$regione_selezionata."'
+        WHERE r.regione LIKE'".$regione_selezionata."'
         ";
         $result = $mysqli->query($queryDati);
         stampa_ricerca_clienti($result);
