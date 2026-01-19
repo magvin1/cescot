@@ -20,12 +20,12 @@ div.clienti{
     float: left;
 }
 div.paginazione{
-     position:fixed; /* Posiziona rispetto al .container */
-  bottom: 0;          /* Lo ancora al fondo del .container */
-  width: 100%;
-  background-color: white;
-  padding: 10px;
-  text-align: center;
+    position:fixed; /* Posiziona rispetto al .container */
+    bottom: 0;          /* Lo ancora al fondo del .container */
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
 }
 a{
     text-align: center;
