@@ -36,7 +36,7 @@
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<option value=". $row["regione"]. ">". $row["regione"]."</option>";  
             }
-            echo"</select>";
+            echo"<option value=''>". "Tutte le regioni" ."</select>";
         } else {
             echo "0 results";
         }
@@ -76,7 +76,7 @@
         stampa_ricerca_clienti($result);
 
         // Pulsanti Indietro e Avanti
-        echo '<div class="paginazione">';
+        echo '<footer class="paginazione">';
         if ($page > 1) {
             $pag_indietro = $page - 1;
             $regione_param = isset($_GET['regione']) ? '&regione=' . urlencode($_GET['regione']) : '';
@@ -87,8 +87,9 @@
             $regione_param = isset($_GET['regione']) ? '&regione=' . urlencode($_GET['regione']) : '';
             echo '<a href="?page=' . $pag_avanti . $regione_param . '" class="Avanti">Avanti »</a>';
         }
-        echo '</div>';
+        echo '</footer>';
         $mysqli->close();
     ?>
+    
 </body>
 </html>

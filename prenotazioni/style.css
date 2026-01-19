@@ -19,3 +19,6 @@ div{
     height: 180px;
     float: left;
 }
+footer.paginazione{
+    text-align: center;
+}
