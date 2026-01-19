@@ -118,17 +118,27 @@
             return;
         }
         
-        function stampa_ricerca_clienti($result){
+        function stampa_ricerca_clienti($result, $pagina=""){
             if ($result->num_rows > 0) {
                 // output data of each row
-                while($row = mysqli_fetch_assoc($result)) {
+                if(!$pagina)
+                    {
+                        $row = mysqli_fetch_assoc($result);
+                        for($i=50*$pagina;$i<50*($pagina+1);$i++) {
+                            echo "<div><h2>". $row["nome"]. " " . $row["cognome"] ."</h2><p>"  
+                            . $row["regione"]. "</p><p>" . $row["area_geografica"]. "</p><p>" 
+                            . $row["citta"]."</p></div>";
+                        }
+                }
+                else{
+                    while($row = mysqli_fetch_assoc($result)) {
                     echo "<div><h2>". $row["nome"]. " " . $row["cognome"] ."</h2><p>"  
                     . $row["regione"]. "</p><p>" . $row["area_geografica"]. "</p><p>" 
                     . $row["citta"]."</p></div>";
+                    }
                 }
-            } else {
-                echo "0 results";
-            }
+            } 
+            else echo "0 results";
             return;
         }
 ?>
