@@ -82,6 +82,7 @@
             $regione_param = isset($_GET['regione']) ? '&regione=' . urlencode($_GET['regione']) : '';
             echo '<a href="?page=' . $pag_indietro . $regione_param . '" class="Indietro">« Indietro</a>';
         }
+        echo '<a>'. $page .'<a>';
         if ($page < $total_pages) {
             $pag_avanti = $page + 1;
             $regione_param = isset($_GET['regione']) ? '&regione=' . urlencode($_GET['regione']) : '';
