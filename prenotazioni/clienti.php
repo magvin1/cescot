@@ -76,7 +76,7 @@
         stampa_ricerca_clienti($result);
 
         // Pulsanti Indietro e Avanti
-        echo '<footer class="paginazione">';
+        echo '<div role="navigation" class="paginazione"><table>';
         if ($page > 1) {
             $pag_indietro = $page - 1;
             $regione_param = isset($_GET['regione']) ? '&regione=' . urlencode($_GET['regione']) : '';
@@ -87,7 +87,7 @@
             $regione_param = isset($_GET['regione']) ? '&regione=' . urlencode($_GET['regione']) : '';
             echo '<a href="?page=' . $pag_avanti . $regione_param . '" class="Avanti">Avanti »</a>';
         }
-        echo '</footer>';
+        echo '</div>';
         $mysqli->close();
     ?>
     

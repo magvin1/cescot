@@ -122,7 +122,7 @@
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) {
-                    echo "<div><h2>". $row["nome"]. " " . $row["cognome"] ."</h2><p>"  
+                    echo "<div class='clienti'><h2>". $row["nome"]. " " . $row["cognome"] ."</h2><p>"  
                     . $row["regione"]. "</p><p>" . $row["area_geografica"]. "</p><p>" 
                     . $row["citta"]."</p></div>";
                 }

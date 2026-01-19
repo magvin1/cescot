@@ -11,7 +11,7 @@ h2{
 .saldo{
     font-weight: bold;
 }
-div{
+div.clienti{
     border: 2px solid black;
     margin: 5px;
 	padding: 5px;
@@ -19,6 +19,15 @@ div{
     height: 180px;
     float: left;
 }
-footer.paginazione{
+div.paginazione{
+     position:fixed; /* Posiziona rispetto al .container */
+  bottom: 0;          /* Lo ancora al fondo del .container */
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+a{
     text-align: center;
+    padding-right: 5%;
 }
