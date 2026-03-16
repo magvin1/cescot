@@ -36,16 +36,28 @@
         echo "</form>";
         
         if (!isset($_GET['regione']) || $_GET['regione'] == "") {
-            $regione_selezionata= "%";
+            $check_regione=0;
         } else{
-            $regione_selezionata= "%".$_GET['regione']."%";
+            $regioneScrittaDaUtente= "%".$_GET['regione']."%";
         }
-        $queryDati= 
-        "select DISTINCT regione
-        from regioni";
-
-        $result = $mysqli->query($queryDati);
-         if ($result->num_rows > 0) {
+        if(!isset($GET['nome'])){
+            $check_nome=0;
+        }
+        if(!$check_nome && !$check_regione){
+            $queryDati= 
+                "SELECT *
+                    FROM clienti cl
+                    INNER JOIN citta c ON c.ID_citta = cl.citta
+                    INNER JOIN regioni rg ON rg.ID_regione = c.regione
+                    WHERE (cl.nome LIKE '%".$nome_inserito."%'
+                    OR cl.cognome LIKE '%".$nome_inserito."%')
+                    AND  rg.regione = '".$regioneScrittaDaUtente."'
+                    GROUP BY rg.regione";
+        }
+        else if(!$check_nome) echo "Non hai inserito nessun nome/cognome da cercare";
+        else if(!$check_regione) echo "Non hai inserito nessuna regione da cercare";
+            $result = $mysqli->query($queryDati);
+        if ($result->num_rows > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<div><h2>". $row[""]. "</h2><p>" . $row["nome"]. " " 
