@@ -26,6 +26,20 @@
     from regioni";
 
     $result = $mysqli->query($queryDati);
+        stampa_ricerca_clienti($result);
+    stampa_ricerca_regioni($result);
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+                echo "<div><h2>". $row[""]. "</h2><p>" . $row["nome"]. " " 
+                . $row["cognome"] ." ". $row["citta"]. " " . $row["regione"]. " " 
+                . $row["dataNascita"]."</p></div>";
+            }
+        } else {
+            echo "0 results";
+        }
+        $mysqli->close();
     ?>
         <form method="GET" action="">
         <label for="regione">Cerca Cliente:</label>
