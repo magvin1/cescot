@@ -1,3 +1,6 @@
+<?php
+    include ('../lib/libreria.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,45 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <label for="nomeCliente">Cliente:</label>
+    <input type="text" id="nomeCliente" name="nomeCliente">
+    <?php
+    $mysqli= connetti_db("prenotazioni");
+    $queryDati= 
+    /*"select distinct concat(c.nome,' ',c.cognome), cit.citta, r.regione, r.area_geografica
+    from clienti as c
+    inner join citta as cit on c.citta = cit.id_citta
+    inner join regioni as r on cit.regione = r.ID_regione";
+
+    Possibile farlo ma devo aggiungere un riconoscitore come per esempio 'as nome_completo' così lo salvo all'interno 
+    di tale variabile e posso poi utilizzarlo come variabile all'interno di row, cancellando row nome e row cognome e inserendo unicamente row nome_completo 
+    */
+    "select DISTINCT regione
+    from regioni";
+
+    $result = $mysqli->query($queryDati);
+    ?>
+        <form method="GET" action="">
+        <label for="regione">Cerca Cliente:</label>
+    <?php
+        echo'<select name=regione id=regione>';
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+                echo "<option value=". $row["regione"]. ">". $row["regione"]."</option>";  
+            }
+            echo"<option value=''>". "Tutte le regioni" ."</select>";
+        } else {
+            echo "0 results";
+        }
+        echo "<button type='submit'>Cerca</button>";
+        echo "</form>";
+        
+        if (!isset($_GET['regione']) || $_GET['regione'] == "") {
+            $regione_selezionata= "%";
+        } else{
+            $regione_selezionata= "%".$_GET['regione']."%";
+        }
+    ?>
 </body>
 </html>
