@@ -65,7 +65,7 @@
         }
         else if(!$check_nome) echo "Non hai inserito nessun nome/cognome da cercare";
         else if(!$check_regione) echo "Non hai inserito nessuna regione da cercare";
-            $result1 = $mysqli->query($queryDati); 
+            $result1 = $mysqli->query($db_connection,$queryDati); 
             var_dump($result1);
         if ($result->num_rows > 0) {
             // output data of each row
